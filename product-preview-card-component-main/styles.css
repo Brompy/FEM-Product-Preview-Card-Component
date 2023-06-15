@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "montserrat";
+    font-weight: 400 500;
+    src: url('https://fonts.google.com/specimen/Montserrat');
+}
+
+@font-face {
+    font-family: "fraunces";
+    font-weight: 700;
+    src: url('https://fonts.google.com/specimen/Fraunces');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    vertical-align: baseline;
+    background: hsl(30, 38%, 92%);
+}
+
+main {
+    margin: 2em auto;
+    border-radius: 10px;
+    max-width: 375px;
+    background: white;
+    font-family: montserrat;
+}
+
+.info {
+    margin: 0;
+}
+
+.product-info {
+    line-height: 1.5;
+}
+
+.perfume {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: inherit;
+    border: 0;
+}
+
+.perfume-header {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: fraunces;
+    line-height: 1;
+    
+}
+
+.info {
+    padding: 2em;
+}
+
+.prices {
+    font-family: fraunces;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices > p {
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.prices p + p {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bold;
+    font-family: 
+}
