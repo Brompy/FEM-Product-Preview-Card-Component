@@ -18,6 +18,7 @@ body {
     width: 100%;
     vertical-align: baseline;
     background: hsl(30, 38%, 92%);
+
 }
 
 main {
@@ -26,10 +27,6 @@ main {
     max-width: 375px;
     background: white;
     font-family: montserrat;
-}
-
-.info {
-    margin: 0;
 }
 
 .product-info {
@@ -44,10 +41,11 @@ main {
 }
 
 .perfume-header {
-    font-size: 1rem;
-    letter-spacing: 4px;
+    font-size: .75rem;
+    font-family: montserrat;
+    letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
-    margin: 0;
+    margin: 1em 0;
     padding: 0;
 }
 
@@ -55,29 +53,37 @@ main {
 h1 {
     font-family: fraunces;
     line-height: 1;
+    font-size: 2rem;
     
 }
 
 .info {
-    padding: 2em;
+    padding: 0 1em;
 }
 
 .prices {
     font-family: fraunces;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 1em 0em;
 }
 
 .prices > p {
     font-size: 2rem;
     color: hsl(158, 36%, 37%);
+    margin-right: .5em;
+    margin-left: .5em;
 }
 
 .prices p + p {
     font-size: 1rem;
     text-decoration: line-through;
-    color: hsl(228, 12%, 48%);
+    color: hsla(228, 12%, 48%, 0.527);
+}
+
+.button-container {
+    padding-bottom: 2em;
 }
 
 .button {
@@ -87,5 +93,8 @@ h1 {
     background: hsl(158, 36%, 37%);
     color: white;
     font-weight: bold;
-    font-family: 
+    font-family: montserrat;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
