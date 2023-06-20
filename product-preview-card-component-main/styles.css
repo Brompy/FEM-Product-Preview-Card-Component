@@ -18,6 +18,7 @@ body {
     width: 100%;
     vertical-align: baseline;
     background: hsl(30, 38%, 92%);
+    overflow-y: hidden;
 
 }
 
@@ -40,12 +41,16 @@ main {
     border: 0;
 }
 
+.perfume-desktop {
+    display: none;
+}
+
 .perfume-header {
     font-size: .75rem;
     font-family: montserrat;
     letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
-    margin: 1em 0;
+    margin: 1em 1em 1em 0em;
     padding: 0;
 }
 
@@ -66,12 +71,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 1em;
+    margin: 1em;
 }
 
 .prices > p {
     font-size: 2rem;
-    height: 1em;
     color: hsl(158, 36%, 37%);
     margin-right: 1em;
 }
@@ -97,10 +101,42 @@ h1 {
     max-width: 300px;
     margin: 0 auto;
     border-radius: 10px;
+    padding: 1em;
 }
 
 .button:hover {
     background: hsl(158, 35%, 28%);
     cursor: pointer;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1400px) {
+
+    .perfume {
+        display: none;
+    }
+    body {
+        overflow-y: auto;
+    }
+    * {
+        border: solid red 1px;
+    }
+    
+    main {
+        max-width: 40%;
+    }
+
+    .info {
+        max-width: 50%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .perfume-desktop {
+        height: 100%;
+        max-width: 100%;
+        display: inline-flex;
+    }
 }
 
