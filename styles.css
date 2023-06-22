@@ -32,6 +32,8 @@ main {
 
 .product-info {
     line-height: 1.5;
+    margin: 1em 0;
+    padding: 1em 0;
 }
 
 .perfume {
