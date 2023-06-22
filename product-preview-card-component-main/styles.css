@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    margin: 2em auto;
+    margin: 1em auto;
     border-radius: 10px;
     max-width: 375px;
     background: white;
@@ -109,6 +109,10 @@ h1 {
     cursor: pointer;
 }
 
+.button > p {
+    margin-left: .2em;
+}
+
 
 /* Desktop */
 @media only screen and (min-width: 1400px) {
@@ -119,24 +123,49 @@ h1 {
     body {
         overflow-y: auto;
     }
-    * {
+    /* * {
         border: solid red 1px;
-    }
+    } */
     
     main {
-        max-width: 40%;
+        background: white;
+        display: flex;
+    }
+
+    h1 {
+        align-self: flex-start;
+        width: 7em;
     }
 
     .info {
-        max-width: 50%;
+        background: white;
+        display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .perfume-desktop {
         height: 100%;
         max-width: 100%;
-        display: inline-flex;
+        display: flex;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .perfume-header {
+        align-self: flex-start;
+    }
+
+    .button-container {
+        flex-basis: 0;
+        display: block;
+    }
+
+    .button {
+        padding: 1em 5em;
     }
 }
+
+/* I think it looks OK now */
 
